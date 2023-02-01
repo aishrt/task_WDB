@@ -1,0 +1,255 @@
+header .item {
+  height: 100vh;
+  position: relative;
+}
+header .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .item .cover {
+  padding: 75px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+}
+header .item .cover .header-content {
+  position: relative;
+  padding: 56px;
+  overflow: hidden;
+  width: 60%;
+  float: left;
+}
+header .item .cover .header-content .line {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border: 9px solid #fff;
+  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+  clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+}
+header .item .cover .header-content h2 {
+  font-weight: 300;
+  font-size: 35px;
+  color: #fff;
+}
+header .item .cover .header-content h1 {
+  font-size: 56px;
+  font-weight: 600;
+  margin: 5px 0 20px;
+  word-spacing: 3px;
+  color: #fff;
+}
+header .item .cover .header-content h4 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #fff;
+}
+header .owl-item.active h1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+header .owl-item.active h2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+header .owl-item.active h4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  animation-delay: 0.3s;
+}
+header .owl-item.active .line {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInLeft;
+  animation-delay: 0.3s;
+}
+header .owl-nav .owl-prev {
+  position: absolute;
+  left: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+header .owl-nav .owl-prev span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+header .owl-nav .owl-prev:focus {
+  outline: 0;
+}
+header .owl-nav .owl-prev:hover {
+  background: #000 !important;
+}
+header .owl-nav .owl-next {
+  position: absolute;
+  right: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+header .owl-nav .owl-next span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+header .owl-nav .owl-next:focus {
+  outline: 0;
+}
+header .owl-nav .owl-next:hover {
+  background: #000 !important;
+}
+header:hover .owl-prev {
+  left: 0px;
+  opacity: 1;
+}
+header:hover .owl-next {
+  right: 0px;
+  opacity: 1;
+}
+
+
+
+.header2 ul {z-index: 999;margin-top: 25px;}
+
+.header2 ul li {display: inline-block; list-style: none; fonfont-family: 'Lexend Deca', sans-serif; } 
+.header2 {
+  position: fixed;
+    z-index: 1000;
+    height: 100px;
+  width: 100%; 
+    background: transparent;
+    padding: 18px;
+    -webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+
+.active {
+  background-color: rgba(34,34,34,0.8);
+}
+.active2{
+  color: #fff!important;
+}
+
+
+img.logo { max-width: 100%; }
+
+.header2 .colm-1 {display: inline-block; float: left; padding-top: 15px; }
+
+.header2 .colm-2 {display: inline-block; float: left; position: relative;margin-top: 2px; }
+
+.header2 .colm-3 {float: right; position: relative; text-align: left; margin-top: -10px;}
+
+.header2 .colm-2 ul li a { position: relative; text-decoration: none; color: #fff; margin-left: 72px; font-size: 19px; text-align: center; visibility: visible;font-family: 'Roboto', sans-serif; }
+
+
+.header2 .colm-2 ul li a:hover {text-decoration: none; color: #8AB226;}
+
+.active .header2 .colm-2 ul li a {color: #fff!important;}
+
+/*.header .colm-2 ul li a:after {background: none repeat scroll 0 0 transparent; bottom: 0; content: ""; display: block; height: 2px; left: 50%; position: absolute; background: #000; transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0; }
+*/
+.header2 .colm-2 ul li a:after {background: none repeat scroll 0 0 transparent; bottom: -5px; content: ""; display: block; height: 2px; left: 50%; position: absolute; background: #000; transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0; }
+
+.header2 .colm-2 ul li a:hover:after {width: 100%; left: 0; }
+
+.header2 .colm-3 ul li a {text-decoration: none; color: #fff; margin-right: 19px;font-family: 'Roboto', sans-serif; }
+
+.header2 .colm-3 ul li a i{ color: #fff; margin-left: 21px; font-size: 21px; text-align: center;}
+
+.header2 .colm-3 ul li a img {max-width: 100%; }
+
+
+/*Dropdown Login*/
+
+.header2 .head-2 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.header2 .head-2 .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 2px;
+    z-index: 1;
+}
+
+.header2 .head-2 .dropdown:hover .dropdown-content {
+  display: block;
+}
+.header2 .head-2 ul li a img {
+    max-width: 100%;
+    margin-left: 20px;
+}
+
+.header2 .head-2 .dropdown ul { margin: 10px 0; padding: 0; }
+.header2 .head-2 .dropdown ul li a img {
+    margin-right: 20px;
+    
+    max-width: 22px;
+}
+
+.header2 .head-2 .dropdown ul li {
+    display: inline-block;
+    list-style: none;
+    fonfont-family: 'Lexend Deca', sans-serif;
+    float: left;
+    width: 100%;
+    margin: 6px 0;
+    padding: 8px 0;
+   
+}
+.header2 .head-2 .dropdown ul li:hover {
+    background-color: #8AB226;
+    padding: 8px 0;
+   
+}
+.header2 .head-2 .dropdown ul li:hover a{ color: #fff; }
+
+
+.boxx { float:left; color:#fff }
